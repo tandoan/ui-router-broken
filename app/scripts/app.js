@@ -2,7 +2,7 @@
 
 angular
   .module('uirouterApp', ['ui.router'])
-  .constant('templateHtml','<table class="table"><thead><tr><td>Key</td><td>Val</td></tr></thead><tr ng-repeat="(k,v) in stateParams"><td>{{k}}</td><td>{{v}}</tr></table>')
+  .constant('templateHtml','<table class="table"><thead><tr><td>Key</td><td>Val</td></tr></thead><tr ng-repeat="(k,v) in stateParams"><td>{{k}}</td><td>{{v}}</tr></table><div ui-view></div>')
   .controller('commonCtrl',function ($scope, $log,$stateParams,$state) {
     $scope.stateParams = $stateParams;
 
