@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="uirouterApp">
+
+    <div class="container">
+
+      <ul class="nav navbar-nav">
+        <li><a ui-sref="first">First</a></li>
+        <li><a ui-sref="first">First</a></li>
+        <li><a ui-sref="second">Second</a></li>
+        <li><a ui-sref="second({myId : 1})">Second 1</a></li>
+        <li><a ui-sref="second({myId : 2})">Second 2</a></li>
+        <li><a href="#/second/3">Second 3</a></li>
+        <li><a ui-sref="second.double({myId: 3, yourId: 4})">doube</a></li>
+        <li><a ui-sref="second.double({myId: 4, yourId: 5})">doubledown</a></li>
+        <li><a href="#/second/10/20">Second 3</a></li>
+        <li><a href="#/third/abcd">third</a></li>
+
+      </ul>
+
+      <div ui-view></div>
+
+    </div>
+
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/routes.js"></script>
+        <script src="scripts/controllers/first.js"></script>
+        <script src="scripts/controllers/second.js"></script>
+        <script src="scripts/controllers/third.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
