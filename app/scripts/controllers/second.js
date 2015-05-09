@@ -9,11 +9,9 @@
  */
 angular.module('uirouterApp')
 
-  .controller('SecondCtrl', function ($scope, $stateParams,$state) {
-    $scope.myId = $stateParams.myId;
-    $scope.yourId = $stateParams.yourId;
+  .controller('SecondCtrl', function ($scope, $log,$stateParams) {
+    $scope.stateParams = $stateParams;
 
-    console.log($stateParams);
-    console.log($state, 'state');
+    $log($stateParams);
   });
 

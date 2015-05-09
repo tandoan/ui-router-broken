@@ -20,17 +20,16 @@
     <div class="container">
 
       <ul class="nav navbar-nav">
-        <li><a ui-sref="first">First</a></li>
-        <li><a ui-sref="first">First</a></li>
-        <li><a ui-sref="second">Second</a></li>
-        <li><a ui-sref="second({myId : 1})">Second 1</a></li>
-        <li><a ui-sref="second({myId : 2})">Second 2</a></li>
-        <li><a href="#/second/3">Second 3</a></li>
-        <li><a ui-sref="second.double({myId: 3, yourId: 4})">doube</a></li>
-        <li><a ui-sref="second.double({myId: 4, yourId: 5})">doubledown</a></li>
-        <li><a href="#/second/10/20">Second 3</a></li>
-        <li><a href="#/third/abcd">third</a></li>
-
+        <li><a ui-sref="first">No Keys</a></li>
+        <li><a ui-sref="first">No Keys</a></li>
+        <li><a ui-sref="second">myId</a></li>
+        <li><a ui-sref="second({myId : 1})">myId: 1</a></li>
+        <li><a ui-sref="second({myId : 2})">myId: 2</a></li>
+        <li><a href="#/second/3">myId: 3</a></li>
+        <li><a ui-sref="second.double({myId: 3, yourId: 4})">myId: 3, yourId: 4</a></li>
+        <li><a ui-sref="second.double({myId: 4, yourId: 5})">myId: 4, yourId: 5</a></li>
+        <li><a href="#/second/10/20">myId: 10, yourId: 20</a></li>
+        <li><a href="#/third/abcd">myId: abcd</a></li>
       </ul>
 
       <div ui-view></div>
@@ -50,10 +49,10 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/routes.js"></script>
-        <script src="scripts/controllers/first.js"></script>
-        <script src="scripts/controllers/second.js"></script>
-        <script src="scripts/controllers/third.js"></script>
+        <!--<script src="scripts/routes.js"></script>-->
+        <!--<script src="scripts/controllers/first.js"></script>-->
+        <!--<script src="scripts/controllers/second.js"></script>-->
+        <!--<script src="scripts/controllers/third.js"></script>-->
         <!-- endbuild -->
 </body>
 </html>
